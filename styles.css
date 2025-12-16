@@ -420,7 +420,7 @@ body{
         justify-content: space-between;
         flex-direction: row;
         position: absolute;
-        top: 22%;
+        top: 22.5%;
     }
     .prev-next-icons img{
         padding: 10px;
