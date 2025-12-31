@@ -34,6 +34,9 @@ body{
     justify-content: center;
     align-items: center;
 }
+.listed-links{
+    visibility: hidden;
+}
 .home-links .menu-icon{
     display: none;
 }
@@ -386,6 +389,34 @@ body{
     }
     .product-header .p-links{
         display: none;
+    }
+    .listed-links{
+        visibility: hidden;
+        background-color: hsl(0, 0%, 100%);
+        height: auto;
+        width: 65%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        box-shadow: 100px 20px 600px 50px hsl(0, 0%, 0%);
+        padding: 30px 40px;
+        list-style: none;
+        transform: translate(-100%);
+    }
+    .listed-links button{
+        background: none;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 40px;
+    }
+    .listed-links li{
+        margin-bottom: 30px;
+    }
+    .listed-links a{
+        text-decoration: none;
+        color: hsl(0, 0%, 0%);
+        font-weight: 700;
     }
     .product-header .menu-icon{
         display: contents;

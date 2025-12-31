@@ -10,13 +10,22 @@
     <div class="container">
         <div class="product-header">
             <div class="home-links">
-                <a href="#" class="menu-icon"><img src="images/icon-menu.svg" ></a>
+                <a href="#" class="menu-icon" onclick="openPageLinks()"><img src="images/icon-menu.svg" ></a>
                 <a href="#" class="link-to-home"><img src="images/logo.svg" ></a>
                 <a href="#"class="p-links">Collection</a>
                 <a href="#"class="p-links">Men</a>
                 <a href="#"class="p-links">Women</a>
                 <a href="#"class="p-links">About</a>
                 <a href="#"class="p-links">Contact</a>
+                <ul class="listed-links" id="pageLinks">
+                    <button onclick="closePageLinks()"><img src="images/icon-close.svg" alt="icon-close"></button>
+
+                    <li><a href="#"class="linked-list">Collection</a></li>
+                    <li><a href="#"class="linked-list">Men</a></li>
+                    <li><a href="#"class="linked-list">Women</a></li>
+                    <li><a href="#"class="linked-list">About</a></li>
+                    <li><a href="#"class="linked-list">Contact</a></li>
+                </ul>
             </div>
             <div class="cart-profile">
                 <a href="#"><img src="images/icon-cart.svg" alt="Cart-icon"></a>
@@ -63,5 +72,17 @@
             </div>
         </div>
     </div>
+
+    <script>
+        function openPageLinks(){
+            document.getElementById("pageLinks").style.visibility="visible";
+            document.getElementById("pageLinks").style.transform = "translate(0%)";
+            document.getElementById("pageLinks").style.transition = "all 0.5s ease";
+        }
+        function closePageLinks(){
+            document.getElementById("pageLinks").style.visibility="hidden";
+            document.getElementById("pageLinks").style.transform = "translate(-100%)";
+        }
+    </script>
 </body>
 </html>
